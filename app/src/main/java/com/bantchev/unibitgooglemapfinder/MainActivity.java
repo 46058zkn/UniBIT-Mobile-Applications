@@ -66,6 +66,10 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                                 .title(location.toUpperCase()));
 
                         map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 8));
+                        
+                        searchView.setQuery("", false);
+                        searchView.setIconified(false);
+                        
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
