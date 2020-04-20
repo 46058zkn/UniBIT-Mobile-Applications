@@ -1,0 +1,2 @@
+rootProject.name='УниБИТ Google Map Търсачка'
+include ':app'
