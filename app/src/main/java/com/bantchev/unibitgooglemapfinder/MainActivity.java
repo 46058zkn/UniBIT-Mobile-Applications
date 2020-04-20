@@ -34,6 +34,11 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         searchView = findViewById(R.id.sv_location);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.google_map);
+        
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "Красимир Банчев, Фак. №46058зкн", Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show();
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
